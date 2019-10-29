@@ -1,16 +1,20 @@
 # BUSCO-docker
+
+Forked from chrishah/BUSCO-docker
+- When multithreaded BUSCO will sometimes fail with an error reccomending using blast 2.2 instead of 2.6. By using Ubuntu 16.04 we can easiy achieve that.
+
 Docker image containing a full BUSCO install
 
 The image contains a full install of [BUSCO](https://busco.ezlab.org/), including all necessary dependencies. I am not part of the BUSCO team - I just made this image.
 
 In detail, the image is set up with:
- - Ubuntu 18.04
- - Python 3.6.6
- - blast 2.6.0
- - hmmer 3.1b2
- - Augustus 3.3.2
+ - Ubuntu 16.04
+ - Python 3
+ - blast 2.2.31-4
+ - hmmer
+ - Augustus
  - BUSCO 3.1.0
- - R 3.4.4
+ - R
    - ggplot2 3.1.0
 
 To run [BUSCO](https://busco.ezlab.org/) you can do the following (this will mount the directory `/home/working` of the container to the current working directory on your local machine):
