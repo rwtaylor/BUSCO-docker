@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER <christoph.hahn@uni-graz.at>
+MAINTAINER <ryan@ryantaylor.net>
 
 RUN apt-get update && apt-get -y upgrade && apt-get install -y build-essential vim git wget ncbi-blast+-legacy python3 python3-pip 
 
